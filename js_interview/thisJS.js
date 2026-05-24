@@ -33,7 +33,12 @@ const user = {
         setTimeout(() => {
             console.log(`Hello ${self.name}`)
         }, 1000)
-    }
+    },
+    greet7 : () => {     
+        return function(){
+            console.log(`Hello ${this.name}`)
+        }
+    }(),
 }
 
 // user.greet()
@@ -42,7 +47,8 @@ const user = {
 // user.greet3()
 // user.greet4()
 // user.greet5()
-user.greet6()
+// user.greet6()
+user.greet7()
 
 // --- INTERVIEW QUESTION 1: Losing 'this' context ---
 console.log("\n--- Q1: Losing 'this' context ---");
