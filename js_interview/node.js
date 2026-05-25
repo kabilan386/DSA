@@ -3,8 +3,8 @@ const fs = require("fs")
 console.log("start")
 
 setTimeout(() => {
-    console.log("Hello")
-}, 0)
+    console.log("Hello1")
+}, 100)
 
 setImmediate(() => {
     console.log("Immediate")
@@ -14,7 +14,7 @@ fs.readFile("./node.js", () => {
     console.log("File Read")
 
     setTimeout(() => {
-        console.log("Hello")
+        console.log("Hello2")
     }, 0)
 
     setImmediate(() => {
