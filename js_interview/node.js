@@ -15,15 +15,19 @@ fs.readFile("./node.js", () => {
 
     setTimeout(() => {
         console.log("Hello2")
-    }, 0)
+    }, 100)
 
     setImmediate(() => {
         console.log("Immediate")
-    })
+    },0)
 
     process.nextTick(() => {
         console.log("Next Tick")
     })
+})
+
+queueMicrotask(() => {
+    console.log("Microtask")
 })
 
 process.nextTick(() => {
