@@ -49,13 +49,13 @@ const user = {
 
 // user.greet()
 // user.greetArrow()
-user.greet2()
+// user.greet2()
 // user.greet3()
-// user.greet4()
+user.greet4()
 // user.greet5()
 // user.greet6()
-user.greet7()
-user.greet8()
+// user.greet7()
+// user.greet8()
 
 // --- INTERVIEW QUESTION 1: Losing 'this' context ---
 // console.log("\n--- Q1: Losing 'this' context ---");
