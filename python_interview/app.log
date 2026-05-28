@@ -1,0 +1,43 @@
+nohup: ignoring input
+[2026-05-28 18:49:53 +0530] [24961] [INFO] Starting gunicorn 26.0.0
+[2026-05-28 18:49:53 +0530] [24961] [INFO] Listening at: http://0.0.0.0:8000 (24961)
+[2026-05-28 18:49:53 +0530] [24961] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2026-05-28 18:49:53 +0530] [24963] [INFO] Booting worker with pid: 24963
+[2026-05-28 18:49:53 +0530] [24964] [INFO] Booting worker with pid: 24964
+[2026-05-28 18:49:53 +0530] [24965] [INFO] Booting worker with pid: 24965
+[2026-05-28 18:49:53 +0530] [24966] [INFO] Booting worker with pid: 24966
+[2026-05-28 18:49:54 +0530] [24961] [INFO] Control socket listening at /run/user/1000/gunicorn.ctl
+[2026-05-28 18:49:54 +0530] [24963] [INFO] Started server process [24963]
+[2026-05-28 18:49:54 +0530] [24963] [INFO] Waiting for application startup.
+[2026-05-28 18:49:54 +0530] [24963] [INFO] Application startup complete.
+[2026-05-28 18:49:54 +0530] [24964] [INFO] Started server process [24964]
+[2026-05-28 18:49:54 +0530] [24964] [INFO] Waiting for application startup.
+[2026-05-28 18:49:54 +0530] [24964] [INFO] Application startup complete.
+[2026-05-28 18:49:54 +0530] [24965] [INFO] Started server process [24965]
+[2026-05-28 18:49:54 +0530] [24965] [INFO] Waiting for application startup.
+[2026-05-28 18:49:54 +0530] [24965] [INFO] Application startup complete.
+[2026-05-28 18:49:54 +0530] [24966] [INFO] Started server process [24966]
+[2026-05-28 18:49:54 +0530] [24966] [INFO] Waiting for application startup.
+[2026-05-28 18:49:54 +0530] [24966] [INFO] Application startup complete.
+[2026-05-28 18:51:18 +0530] [24961] [INFO] Handling signal: term
+[2026-05-28 18:51:18 +0530] [24963] [INFO] Shutting down
+[2026-05-28 18:51:18 +0530] [24965] [INFO] Shutting down
+[2026-05-28 18:51:18 +0530] [24964] [INFO] Shutting down
+[2026-05-28 18:51:18 +0530] [24966] [INFO] Shutting down
+[2026-05-28 18:51:18 +0530] [24963] [INFO] Waiting for application shutdown.
+[2026-05-28 18:51:18 +0530] [24963] [INFO] Application shutdown complete.
+[2026-05-28 18:51:18 +0530] [24963] [INFO] Finished server process [24963]
+[2026-05-28 18:51:18 +0530] [24965] [INFO] Waiting for application shutdown.
+[2026-05-28 18:51:18 +0530] [24965] [INFO] Application shutdown complete.
+[2026-05-28 18:51:18 +0530] [24965] [INFO] Finished server process [24965]
+[2026-05-28 18:51:18 +0530] [24964] [INFO] Waiting for application shutdown.
+[2026-05-28 18:51:18 +0530] [24964] [INFO] Application shutdown complete.
+[2026-05-28 18:51:18 +0530] [24964] [INFO] Finished server process [24964]
+[2026-05-28 18:51:18 +0530] [24966] [INFO] Waiting for application shutdown.
+[2026-05-28 18:51:18 +0530] [24966] [INFO] Application shutdown complete.
+[2026-05-28 18:51:18 +0530] [24966] [INFO] Finished server process [24966]
+[2026-05-28 18:51:18 +0530] [24961] [INFO] Worker (pid:24963) was sent SIGTERM!
+[2026-05-28 18:51:18 +0530] [24961] [INFO] Worker (pid:24964) was sent SIGTERM!
+[2026-05-28 18:51:18 +0530] [24961] [INFO] Worker (pid:24965) was sent SIGTERM!
+[2026-05-28 18:51:18 +0530] [24961] [INFO] Worker (pid:24966) was sent SIGTERM!
+[2026-05-28 18:51:18 +0530] [24961] [INFO] Shutting down: Master
