@@ -1,13 +1,13 @@
 if(0){
-    console.log("truthy")
+    console.log("0 truthy")
 }else{
-    console.log("falsy")
+    console.log("0 falsy")
 }
 
 if(1){
-    console.log("truthy")
+    console.log("1 truthy")
 }else{
-    console.log("falsy")
+    console.log("1 falsy")
 }
 
 if("0"){
@@ -23,38 +23,38 @@ if(""){
 }
 
 if(null){
-    console.log("truthy")
+    console.log("null truthy")
 }else{
-    console.log("falsy")
+    console.log("null falsy")
 }
 
 if(undefined){
-    console.log("truthy")
+    console.log("undefined truthy")
 }else{
-    console.log("falsy")
+    console.log("undefined falsy")
 }
 
 if(NaN){
-    console.log("truthy")
+    console.log("NaN truthy")
 }else{
-    console.log("falsy")
+    console.log("NaN falsy")
 }
 
 if(false){
-    console.log("truthy")
+    console.log("false truthy")
 }else{
-    console.log("falsy")
+    console.log("false falsy")
 }
 
 if(true){
-    console.log("truthy")
+    console.log("true truthy")
 }else{
-    console.log("falsy")
+    console.log("true falsy")
 }
 
 if([]){
-    console.log("truthy")
+    console.log("[] truthy")
 }else{
-    console.log("falsy")
+    console.log("[] falsy")
 }
 

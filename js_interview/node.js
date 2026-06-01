@@ -4,7 +4,7 @@ console.log("start")
 
 setTimeout(() => {
     console.log("Hello1")
-}, 100)
+}, 0)
 
 setImmediate(() => {
     console.log("Immediate")
