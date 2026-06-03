@@ -7,11 +7,11 @@ def findsecondnonduplicate(value):
     
     print(hashmap)
     count = 0
-    for i in range(len(value)):
-        if hashmap[value[i]] == 1:
+    for (key , value) in hashmap.items():
+        if value == 1:
             count += 1
             if count == 2:
-                return value[i]
+                return key
     return -1
 
 print(findsecondnonduplicate(value))
