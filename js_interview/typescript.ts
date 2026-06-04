@@ -57,3 +57,48 @@ function greet3(person: Person, fn: GreetFunction) {
 
 console.log(greet3({ name: "John", age: 30 }, greet));
 
+
+interface User {
+  id: number;
+  name: string;
+}
+
+type Status = "active" | "inactive";
+
+interface UserWithStatus {
+  user: User;
+  status: Status;
+}
+
+function processUser(user: UserWithStatus) {
+  if (user.status === "active") {
+    console.log(`Processing active user: ${user.user.name}`);
+  } else {
+    console.log(`Processing inactive user: ${user.user.name}`);
+  }
+}
+
+processUser({ user: { id: 1, name: "John" }, status: "active" })
+processUser({ user: { id: 2, name: "Jane" }, status: "inactive" });
+
+
+// without tuple
+
+function getFirstElement(arr: any[]) {
+    return arr[0];
+}
+
+console.log(getFirstElement([1, 2, 3]));
+console.log(getFirstElement(["hello", "world"]));
+
+
+
+// tuple
+
+function getFirstElementTuple(arr: [number, string]) {
+    return arr[0];
+}
+
+console.log(getFirstElementTuple([1, "hello"]));
+// console.log(getFirstElementTuple(["hello", 1]));
+
