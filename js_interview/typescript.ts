@@ -1,0 +1,48 @@
+// generic type
+
+function identity<T>(arg: T): T {
+    return arg;
+}
+
+console.log(identity<number>(1));
+console.log(identity<string>("hello"));
+
+// interface
+
+interface Person {
+    name: string;
+    age: number;
+}
+
+function greet(person: Person) {
+    return `Hello ${person.name}, you are ${person.age} years old.`;
+}
+
+console.log(greet({ name: "John", age: 30 }));
+
+// optional interface
+
+interface Person1 {
+    name: string;
+    age?: number;
+}
+
+function greet1(person: Person1) {
+    return `Hello ${person.name}, you are ${person.age} years old.`;
+}
+
+console.log(greet1({ name: "John", age: 30 }));
+console.log(greet1({ name: "John" }));
+
+// Type Aliases
+
+type Person2 = {
+    name: string;
+    age?: number;
+}
+
+function greet2(person: Person2) {
+    return `Hello ${person.name}, you are ${person.age} years old.`;
+}
+
+console.log(greet2({ name: "John", age: 30 }));
