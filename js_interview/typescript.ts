@@ -102,3 +102,22 @@ function getFirstElementTuple(arr: [number, string]) {
 console.log(getFirstElementTuple([1, "hello"]));
 // console.log(getFirstElementTuple(["hello", 1]));
 
+// Intersections
+
+interface Person {
+    name: string;
+    age: number;
+}
+
+interface Employee {
+    employeeId: number;
+    salary: number;
+}
+
+type PersonEmployee = Person & Employee;
+
+function processPersonEmployee(personEmployee: PersonEmployee) {
+    console.log(`Name: ${personEmployee.name}, Age: ${personEmployee.age}, Employee ID: ${personEmployee.employeeId}, Salary: ${personEmployee.salary}`);
+}
+
+processPersonEmployee({ name: "John", age: 30, employeeId: 1, salary: 1000 });
