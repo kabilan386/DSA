@@ -46,3 +46,14 @@ function greet2(person: Person2) {
 }
 
 console.log(greet2({ name: "John", age: 30 }));
+
+// function type
+
+type GreetFunction = (person: Person) => string;
+
+function greet3(person: Person, fn: GreetFunction) {
+    return fn(person);
+}
+
+console.log(greet3({ name: "John", age: 30 }, greet));
+
