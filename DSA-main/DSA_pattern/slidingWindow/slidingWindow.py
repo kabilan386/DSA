@@ -1,3 +1,6 @@
+# Question : Find the length of the longest substring without repeating characters.
+
+
 def lengthOfLongestSubstring(s: str) -> int:
     char_set = set()
     left = 0
@@ -14,3 +17,12 @@ def lengthOfLongestSubstring(s: str) -> int:
 
 
 print(lengthOfLongestSubstring("abcabcbb"))
+
+# Loops
+# for right in range(len(s)) - this loop is used to iterate through the array
+# while s[right] in char_set - this loop is used to find the longest substring without repeating characters
+
+
+# Time and space complexity
+# Time complexity : O(n)
+# Space complexity : O(1)
