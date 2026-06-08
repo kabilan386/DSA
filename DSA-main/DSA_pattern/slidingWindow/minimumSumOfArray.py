@@ -1,3 +1,6 @@
+# Question : Find the minimum length of the subarray whose sum is greater than or equal to target. If no such subarray exists, return 0.
+
+
 arr = [1, 4, 2, 10, 2, 3, 1, 0, 20]
 k = 4
 
@@ -27,3 +30,7 @@ def minSubArray(nums , target):
 
 
 print(minSubArray(arr , k))
+
+# Time and space complexity
+# Time complexity : O(n)
+# Space complexity : O(1)
