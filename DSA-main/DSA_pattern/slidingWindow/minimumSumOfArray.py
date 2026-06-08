@@ -31,6 +31,13 @@ def minSubArray(nums , target):
 
 print(minSubArray(arr , k))
 
+
+# Loops
+# while right < len(nums) - this loop is used to iterate through the array
+# while subSum >= target - this loop is used to find the minimum length of the subarray
+
+
+
 # Time and space complexity
 # Time complexity : O(n)
 # Space complexity : O(1)
