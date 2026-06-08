@@ -1,4 +1,5 @@
-# Question : Find the minimum length of the subarray whose sum is greater than or equal to target. If no such subarray exists, return 0.
+# Question : Find the minimum length of the subarray whose sum is greater than or equal to target. 
+# If no such subarray exists, return 0.
 
 
 arr = [1, 4, 2, 10, 2, 3, 1, 0, 20]
