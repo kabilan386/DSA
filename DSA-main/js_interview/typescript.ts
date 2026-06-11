@@ -94,6 +94,7 @@ console.log(getFirstElement(["hello", "world"]));
 
 
 // tuple
+// Reason : 
 
 function getFirstElementTuple(arr: [number, string]) {
     return arr[0];
