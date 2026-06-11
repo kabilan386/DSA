@@ -1,0 +1,8 @@
+main
+current_solution
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+node_modules/
