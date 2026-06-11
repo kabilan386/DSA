@@ -55,7 +55,7 @@ const user = {
 // user.greet()
 // user.greetArrow()
 // user.greet2()
-user.greet3()
+// user.greet3()
 // user.greet4()
 // user.greet5()
 // user.greet6()
@@ -72,8 +72,8 @@ const extractedGreet = user.greet;
 // console.log("\n--- Q2: Explicit Binding ---");
 const user2 = { name: "Alice" };
 // user.greet.call(user2); // Output: Hello Alice
-// user.greet.apply(user2); // Output: Hello Alice
-const boundGreet = user.greet.bind(user2);
+user.greet.apply(user2); // Output: Hello Alice
+// const boundGreet = user.greet.bind(user2);
 // boundGreet(); // Output: Hello Alice
 
 // --- INTERVIEW QUESTION 3: 'this' in Constructor Functions ---

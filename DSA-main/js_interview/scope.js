@@ -33,3 +33,8 @@ function test4(){
 
 test4()
 
+// block scope with let and const
+
+
+
+

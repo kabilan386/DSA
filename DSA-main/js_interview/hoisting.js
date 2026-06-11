@@ -25,3 +25,8 @@ var funcExpression = function test2() {
 }
 
 // test()
+
+
+// Temporal Dead Zone
+
+console.log(a)

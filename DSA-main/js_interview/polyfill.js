@@ -8,7 +8,7 @@ Array.prototype.myMap = function(cb){
 
 const arr = [1,2,3,4,5]
 
-console.log(arr.myMap((item) => item * 2))
+// console.log(arr.myMap((item) => item * 2))
 
 Array.prototype.myFilter = function(cb){
     const result = []
@@ -20,7 +20,7 @@ Array.prototype.myFilter = function(cb){
     return result
 }
 
-console.log(arr.myFilter((item) => item % 2 === 0))
+// console.log(arr.myFilter((item) => item % 2 === 0))
 
 Array.prototype.myReduce = function(cb, initialValue){
     let accumulator = initialValue
@@ -30,7 +30,7 @@ Array.prototype.myReduce = function(cb, initialValue){
     return accumulator
 }
 
-console.log(arr.myReduce((acc, item) => acc + item, 0))
+// console.log(arr.myReduce((acc, item) => acc + item, 0))
 
 Array.prototype.myFlat = function(depth = 1){
     const result = []
@@ -44,4 +44,18 @@ Array.prototype.myFlat = function(depth = 1){
     return result
 }
 
-console.log(arr.myFlat(2))
+// console.log(arr.myFlat(2))
+
+// Prototype chain
+
+function Person(name){
+    this.name = name
+}
+
+Person.prototype.greet = function(){
+    console.log(`Hello ${this.name}`)
+}
+
+const p1 = new Person("Kabilan")
+
+p1.greet()
