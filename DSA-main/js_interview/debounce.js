@@ -7,3 +7,13 @@ function debounce(cb, delay){
         }, delay)
     }
 }
+
+
+
+const debouncedFn = debounce(() => {
+    console.log("Hello")
+}, 1000)
+
+debouncedFn()
+
+

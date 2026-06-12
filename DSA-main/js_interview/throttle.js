@@ -9,3 +9,10 @@ function throttle(cb, delay){
         }
     }
 }
+
+
+
+const throttledFn = throttle(() => {
+    console.log("Hello")
+}, 1000)
+
