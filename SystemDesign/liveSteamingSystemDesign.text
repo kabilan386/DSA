@@ -1,0 +1,87 @@
+Live streaming
+--Camera
+--Encoder(Reduce the size of the video . Raw to compressed )
+--Source Feeder(Ingest the video from the encoder and send it to the CDN)
+--Contribution Encoder(Encode the video into different formats and resolutions)
+--Cloud DVR(Store the video in the cloud)
+--Distribution Encoder(Encode the video into different formats and resolutions)
+    --HLS/DASH
+        --Master Manifest
+        --Variant Manifest(Different resolutions and bitrates)
+        --Media Manifest(Chunks of video)
+    --DRM(Digital Rights Management)
+    --CDN(Content Delivery Network)
+--Player
+    --Request Master Manifest
+        --Check DRM
+            --If DRM is enabled
+                --Request License
+                --Decrypt Media Chunks
+            --Else
+                --Play Media Chunks
+    --Request Variant Manifest
+        --Check DRM
+            --If DRM is enabled
+                --Request License
+                --Decrypt Media Chunks
+            --Else
+                --Play Media Chunks
+    --Request Media Manifest
+        --Check DRM
+            --If DRM is enabled
+                --Request License
+                --Decrypt Media Chunks
+            --Else
+                --Play Media Chunks
+    --Request Media Chunks
+        --Check DRM
+            --If DRM is enabled
+                --Request License
+                --Decrypt Media Chunks
+            --Else
+                --Play Media Chunks    
+    --Request DRM
+    --Request License
+
+
+Client 
+    --Browser
+        --HTML5 Video Player
+        --MSE(Media Source Extensions)
+        --EME(Encrypted Media Extensions)
+    --Mobile App
+        --Native Video Player
+        --ExoPlayer(Android)
+        --AVPlayer(iOS)
+    --Smart TV
+        --Native Video Player
+        --Tizen Player(Samsung)
+        --WebOS Player(LG)
+    --Set Top Box
+        --Native Video Player
+        --Android TV Player
+        --Roku Player
+        --Fire TV Player
+    --Game Console
+        --Native Video Player
+        --PlayStation Player
+        --Xbox Player
+    --Other Devices
+        --Smart Watch
+        --VR Headset
+        --AR Headset
+        --Smart Display
+        --Smart Speaker
+        --Smart Car
+
+
+High-Level-Flow
+    --Camera
+    --Encoder
+    --Source Feeder
+    --Contribution Encoder
+    --Cloud DVR
+    --Distribution Encoder
+    --CDN
+    --Player
+
