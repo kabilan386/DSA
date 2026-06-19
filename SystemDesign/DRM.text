@@ -1,11 +1,16 @@
+Video encryption and DRM
+    --Encryption
+        --AES-128
+        --AES-256
+    --DRM
+        --Widevine
+        --PlayReady
+        --FairPlay
+
+
+
 DRM(Digital Rights Management)
-    --License Server
-    --License Key
-    --License Request
-    --License Response
-    --License Validation
-    --License Revocation
-    --License Expiration
-    --License Renewal
-    --License Transfer
+    --Encryption
+    
+    
     

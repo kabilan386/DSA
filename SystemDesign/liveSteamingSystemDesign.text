@@ -85,3 +85,64 @@ High-Level-Flow
     --CDN
     --Player
 
+
+Auto-Scaling
+    --Load Balancer
+    --Auto-Scaling Group
+    --Auto-Scaling Policy
+    --Auto-Scaling Trigger
+    --Auto-Scaling Notification
+    --Auto-Scaling Health Check
+    --Auto-Scaling Metrics
+    --Auto-Scaling Cooldown
+    --Auto-Scaling Termination Policy
+
+
+
+Video-Quality-Auto-Selection
+    --Player
+        --Request Master Manifest
+        --Check DRM
+            --If DRM is enabled
+                --Request License
+                --Decrypt Media Chunks
+            --Else
+                --Play Media Chunks
+
+            --Check Network Speed
+                --If Network Speed is High
+                    --Request High Quality Video
+                --Else
+                    --Request Low Quality Video
+            --Check Device Capability
+                --If Device Capability is High
+                    --Request High Quality Video
+                --Else
+                    --Request Low Quality Video
+            --Check Screen Size
+                --If Screen Size is High
+                    --Request High Quality Video
+                --Else
+                    --Request Low Quality Video
+            --Check Screen Orientation
+                --If Screen Orientation is Portrait
+                    --Request High Quality Video
+                --Else
+                    --Request Low Quality Video
+            --Check Screen Resolution
+                --If Screen Resolution is High
+                    --Request High Quality Video
+                --Else
+                    --Request Low Quality Video
+            --Check Screen Refresh Rate
+                --If Screen Refresh Rate is High
+                    --Request High Quality Video
+                --Else
+                    --Request Low Quality Video
+            --Check Screen Aspect Ratio
+                --If Screen Aspect Ratio is High
+                    --Request High Quality Video
+                --Else
+                    --Request Low Quality Video
+             
+            
