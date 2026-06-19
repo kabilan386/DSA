@@ -9,6 +9,9 @@ Live streaming
         --Master Manifest
         --Variant Manifest(Different resolutions and bitrates)
         --Media Manifest(Chunks of video)
+            --Encryption
+                --AES-128
+            --4s-10s chunks
     --DRM(Digital Rights Management)
     --CDN(Content Delivery Network)
 --Player

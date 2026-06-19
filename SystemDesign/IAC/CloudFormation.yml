@@ -1,0 +1,81 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'A basic AWS CloudFormation template that creates an S3 bucket and an EC2 instance.'
+
+Parameters:
+  LatestAmiId:
+    Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
+    Default: '/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2'
+    Description: 'Fetches the latest Amazon Linux 2 AMI ID from Systems Manager'
+
+Resources:
+  MyS3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      # Bucket names must be globally unique
+      BucketName: !Sub '${AWS::StackName}-basic-bucket-${AWS::AccountId}'
+
+  InstanceSecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupDescription: 'Enable HTTP/HTTPS and SSH ingress, allow all egress'
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 22
+          ToPort: 22
+          CidrIp: 0.0.0.0/0
+      SecurityGroupEgress:
+        - IpProtocol: -1
+          CidrIp: 0.0.0.0/0
+
+  MyEC2Instance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.micro
+      ImageId: !Ref LatestAmiId
+      SecurityGroupIds:
+        - !Ref InstanceSecurityGroup
+      Tags:
+        - Key: Name
+          Value: !Sub '${AWS::StackName}-Instance'
+
+Outputs:
+  BucketName:
+    Description: 'The name of the created S3 bucket'
+    Value: !Ref MyS3Bucket
+  BucketArn:
+    Description: 'The ARN of the newly created S3 bucket'
+    Value: !GetAtt MyS3Bucket.Arn
+  InstanceId:
+    Description: 'The Instance ID of the newly created EC2 instance'
+    Value: !Ref MyEC2Instance
+  InstancePublicIP:
+    Description: 'Public IP address of the EC2 instance'
+    Value: !GetAtt MyEC2Instance.PublicIp
+
+
+# How to deploy
+# aws cloudformation create-stack --stack-name my-stack --template-body file://CloudFormation.yml
+# aws cloudformation update-stack --stack-name my-stack --template-body file://CloudFormation.yml
+# aws cloudformation delete-stack --stack-name my-stack
+# aws cloudformation describe-stacks --stack-name my-stack
+# aws cloudformation describe-stack-events --stack-name my-stack
+# aws cloudformation describe-stack-resources --stack-name my-stack
+
+
+# Deploy commands
+# aws cloudformation create-stack --stack-name my-stack --template-body file://CloudFormation.yml
+
+# CDK
+# cdk synth
+# cdk deploy
+# cdk destroy
+# cdk diff
+# cdk bootstrap
