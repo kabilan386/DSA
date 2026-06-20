@@ -1,0 +1,59 @@
+# ── Virtual Environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.env/
+
+# ── Environment Variables ─────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Python Cache & Bytecode ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# ── Django Specific ───────────────────────────────────────────────────────────
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static/
+
+# ── Migrations (optional — uncomment if you want to ignore them) ──────────────
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# ── Secret Key / Sensitive Config ────────────────────────────────────────────
+secrets.py
+config/local.py
+
+# ── Coverage & Testing ────────────────────────────────────────────────────────
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+coverage.xml
+*.cover
+
+# ── Build / Distribution ─────────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# ── IDE / Editor ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS Files ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
