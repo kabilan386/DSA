@@ -1,3 +1,12 @@
+venv/
+.venv/
+python_interview/Django/.venv/
+python_interview/FastAPI/.venv/
+python_interview/Flask/.venv/
+env/
+ENV/
+__pycache__/
+
 # C++ Output Files
 *.out
 *.exe

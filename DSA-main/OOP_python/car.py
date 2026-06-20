@@ -1,4 +1,4 @@
-
+# This code demonstrates the concept of inheritance in object-oriented programming (OOP) using Python.
 class Engine:
     def __init__(self, horsepower, fuel_type):
         self.horsepower = horsepower
@@ -10,7 +10,7 @@ class Engine:
     def stop(self):
         print("Engine stopped")
 
-
+# Car class inherits from Engine class
 class Car(Engine):
     def __init__(self, make, model, year, horsepower, fuel_type):
         self.make = make
